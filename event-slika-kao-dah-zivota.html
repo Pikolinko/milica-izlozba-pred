@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Slika kao dah života — Milica Novaković</title>
+  <meta name="description" content="Samostalna izložba Milice Novaković, 10. decembar 2026. u 19 časova, Gradska galerija „Milan Tucović“, Požega." />
+  <meta name="theme-color" content="#f4f1eb" />
+
+  <link rel="icon" type="image/png" href="slike/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+
+  <meta property="og:title" content="Slika kao dah života — Milica Novaković" />
+  <meta property="og:description" content="Otvaranje samostalne izložbe u Požegi, 10. decembra 2026. u 19 časova." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    /* Local styles: only this exhibition page */
+    .exhibition-page { background-color: #f4f1eb; }
+    .exhibition-page .ex-back { padding-top: 2rem; }
+    .exhibition-page .ex-hero { padding: clamp(2.5rem,5vw,5rem) 0 clamp(3rem,7vw,7rem); border-bottom: 1px solid var(--gallery-line); }
+    .exhibition-page .ex-grid { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.85fr); gap:clamp(2rem,6vw,6rem); align-items:center; }
+    .exhibition-page .ex-grid > * { min-width:0; }
+    .exhibition-page h1 { font-size:clamp(3rem,6.5vw,6.5rem); line-height:.98; margin:0 0 1.5rem; }
+    .exhibition-page .ex-artist { font-family:"Playfair Display",Georgia,serif; font-size:clamp(1.5rem,2.6vw,2.4rem); color:var(--gallery-accent); margin:0 0 1.3rem; }
+    .exhibition-page .ex-lead { max-width:56ch; color:#574c43; line-height:1.85; margin:0 0 1.8rem; }
+    .exhibition-page .ex-ornament { display:flex; align-items:center; gap:.75rem; color:var(--gallery-accent); width:150px; margin:1.5rem 0; }
+    .exhibition-page .ex-ornament::before,.exhibition-page .ex-ornament::after { content:""; flex:1; height:1px; background:currentColor; opacity:.55; }
+    .exhibition-page .ex-poster { margin:0; width:min(100%,530px); justify-self:center; }
+    .exhibition-page .ex-poster img { width:100%; height:auto; box-shadow:0 12px 36px rgba(55,42,32,.13); border:1px solid var(--gallery-line); }
+    .exhibition-page .ex-poster figcaption { text-align:center; margin-top:1rem; font-size:.8rem; color:var(--gallery-muted); }
+    .exhibition-page .ex-actions { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .exhibition-page .ex-section { padding:clamp(3rem,7vw,7rem) 0; border-bottom:1px solid var(--gallery-line); }
+    .exhibition-page .ex-section h2 { font-size:clamp(2.2rem,4.6vw,4.5rem); line-height:1.05; margin:0 0 2rem; }
+    .exhibition-page .ex-program { max-width:880px; margin:0; border-top:1px solid var(--gallery-line); }
+    .exhibition-page .ex-program > div { display:grid; grid-template-columns:minmax(140px,.7fr) minmax(0,1fr); gap:1rem; padding:1.5rem 0; border-bottom:1px solid var(--gallery-line); align-items:baseline; }
+    .exhibition-page .ex-program dt { color:var(--gallery-muted); font-size:.78rem; letter-spacing:.09em; text-transform:uppercase; }
+    .exhibition-page .ex-program dd { margin:0; font-family:"Playfair Display",Georgia,serif; font-size:clamp(1.3rem,2.4vw,2rem); }
+    .exhibition-page .ex-close { text-align:center; padding:clamp(3rem,7vw,6rem) 0; }
+    .exhibition-page .ex-close .ex-ornament { margin:0 auto 1.5rem; }
+    .exhibition-page .ex-close h2 { font-size:clamp(1.9rem,4vw,3.5rem); }
+    .exhibition-page a:focus-visible,.exhibition-page button:focus-visible { outline:2px solid #8d6d52; outline-offset:4px; }
+    @media(max-width:980px) { .exhibition-page .ex-grid { grid-template-columns:1fr; } .exhibition-page .ex-poster { justify-self:start; } }
+    @media(max-width:640px) { .exhibition-page .ex-program > div { grid-template-columns:1fr; gap:.4rem; } .exhibition-page .ex-actions { align-items:flex-start; } .exhibition-page .event-details > div { grid-template-columns:85px minmax(0,1fr); gap:.7rem; } }
+  </style>
+</head>
+<body class="gallery-page events-page exhibition-page">
+<header class="site-header" id="top">
+  <a class="skip-link" href="#content">Preskoči na sadržaj</a>
+
+  <nav class="nav" aria-label="Glavna navigacija">
+    <a href="index.html" class="brand" aria-label="Milica Novaković — početna">
+      <img class="brand__logo" src="slike/logo.png" alt="" width="48" height="48" />
+      <span class="brand__text">MILICA NOVAKOVIĆ</span>
+    </a>
+
+    <button class="nav__toggle" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="navMenu">
+      <span class="nav__toggleLine"></span>
+      <span class="nav__toggleLine"></span>
+      <span class="nav__toggleLine"></span>
+    </button>
+
+    <div class="nav__menu" id="navMenu">
+      <a href="index.html" class="nav__link">Početna</a>
+      <a href="gallery.html" class="nav__link">Radovi</a>
+      <a href="artist.html" class="nav__link">O meni</a>
+      <a href="events.html" class="nav__link is-active" aria-current="true">Događaji</a>
+      <a href="bags.html" class="nav__link">Art torbe</a>
+      <a href="contact.html" class="nav__link">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main id="content">
+  <div class="container ex-back"><a class="text-link" href="events.html">← Svi događaji</a></div>
+  <section class="ex-hero" aria-labelledby="ex-title">
+    <div class="container ex-grid">
+      <div>
+        <p class="section-kicker">Samostalna izložba · Požega · 2026</p>
+        <h1 id="ex-title">Slika kao<br>dah života</h1>
+        <p class="ex-artist">Milica Novaković</p>
+        <div class="ex-ornament" aria-hidden="true">❦</div>
+        <p class="ex-lead">Sa velikim zadovoljstvom pozivam vas na otvaranje svoje samostalne izložbe slika „Slika kao dah života“ u Gradskoj galeriji „Milan Tucović“ u Požegi.</p>
+        <dl class="event-details">
+          <div><dt>Datum</dt><dd><time datetime="2026-12-10">Četvrtak, 10. decembar 2026.</time></dd></div>
+          <div><dt>Otvaranje</dt><dd><time datetime="2026-12-10T19:00:00+01:00">19 časova</time></dd></div>
+          <div><dt>Mesto</dt><dd>Gradska galerija „Milan Tucović“, Požega</dd></div>
+        </dl>
+        <div class="ex-actions">
+          <a class="btn gallery-btn gallery-btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=Gradska+galerija+Milan+Tucovi%C4%87+Po%C5%BEega" target="_blank" rel="noopener noreferrer">Lokacija ↗</a>
+          <a class="btn gallery-btn gallery-btn--ghost" href="slika-kao-dah-zivota.ics" download>Dodaj u kalendar</a>
+        </div>
+      </div>
+      <figure class="ex-poster">
+        <a href="slike/pozivnica-svetla.jpg" target="_blank" rel="noopener" aria-label="Otvori pozivnicu u punoj veličini"><img src="slike/pozivnica-svetla.jpg" width="1200" height="1600" alt="Zvanična pozivnica za izložbu Slika kao dah života, 10. decembra 2026. u 19 časova u Požegi" fetchpriority="high"></a>
+        <figcaption>Zvanična pozivnica · <a class="text-link" href="slike/pozivnica-svetla.jpg" download>Preuzmi pozivnicu ↓</a></figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="ex-section" aria-labelledby="program-title">
+    <div class="container artist-story__grid">
+      <div class="artist-story__index"><span>01</span><span class="artist-story__label">Program</span></div>
+      <div class="artist-story__body">
+        <h2 id="program-title">Veče umetnosti.</h2>
+        <p class="ex-lead">Otvaranje izložbe pratiće poezija i muzika na klaviru.</p>
+        <dl class="ex-program">
+          <div><dt>Izložbu otvara</dt><dd>Milijan Despotović</dd></div>
+          <div><dt>Poeziju čita</dt><dd>Mišo Marković</dd></div>
+          <div><dt>Klavir</dt><dd>Milica Stojčić</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <section class="ex-section" aria-labelledby="about-title">
+    <div class="container artist-story__grid">
+      <div class="artist-story__index"><span>02</span><span class="artist-story__label">O izložbi</span></div>
+      <div class="artist-story__body">
+        <h2 id="about-title">Boja, svetlost i emocija.</h2>
+        <p class="ex-lead">U svom umetničkom radu istražujem odnos boje, svetlosti i emocije. Moje slike predstavljaju spoj ličnog iskustva, unutrašnjeg doživljaja i dugogodišnje posvećenosti slikarstvu. Izložba „Slika kao dah života“ prilika je da taj svet podelim sa vama.</p>
+        <a class="text-link" href="artist.html">O umetnici →</a>
+      </div>
+    </div>
+  </section>
+  <section class="ex-close">
+    <div class="container">
+      <div class="ex-ornament" aria-hidden="true">❦</div>
+      <h2>Radujem se vašem dolasku.</h2>
+      <p class="muted">Gradska galerija „Milan Tucović“ · Kulturni centar Požega</p>
+      <a class="text-link" href="gallery.html">Pogledajte radove →</a>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__identity">
+      <div class="footer__title">Milica Novaković</div>
+      <div class="muted">Slikarstvo</div>
+    </div>
+
+    <div>
+      <div class="footer__label">Navigacija</div>
+      <nav class="footer__nav" aria-label="Navigacija u podnožju">
+        <a class="footer__link" href="gallery.html">Radovi</a>
+        <a class="footer__link" href="artist.html">O meni</a>
+        <a class="footer__link" href="events.html">Događaji</a>
+        <a class="footer__link" href="bags.html">Art torbe</a>
+        <a class="footer__link" href="contact.html">Kontakt</a>
+      </nav>
+    </div>
+
+    <div>
+      <div class="footer__label">Kontakt</div>
+      <a class="footer__link" href="mailto:milicanova.art@gmail.com">milicanova.art@gmail.com</a>
+      <a class="footer__link" href="https://instagram.com/milicanova.art/" target="_blank" rel="noreferrer">Instagram</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="muted">© Milica Novaković. Sva prava zadržana.</div>
+    <a class="muted footer__top-link" href="#top">Nazad na vrh ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>

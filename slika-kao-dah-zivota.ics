@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Milica Novakovic//Izlozbe//SR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:slika-kao-dah-zivota-20261210@milicanova-art.rs
+DTSTAMP:20261127T120000Z
+DTSTART:20261210T180000Z
+SUMMARY:Slika kao dah života – otvaranje izložbe
+LOCATION:Gradska galerija „Milan Tucović“\, Požega
+DESCRIPTION:Samostalna izložba Milice Novaković.
+END:VEVENT
+END:VCALENDAR
